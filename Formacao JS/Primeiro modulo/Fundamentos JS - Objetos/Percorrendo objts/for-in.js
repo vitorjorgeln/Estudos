@@ -26,15 +26,9 @@ let cliente = {
 
 let relatorio = ""
 
-// ---------------------------------------------------------------------------------------------
-
-for (let info in cliente){
-    if(typeof cliente[info] === "object" || typeof cliente[info] === "function"){
-        continue
-    }else{
-        relatorio += `${info} : ${cliente[info]} \n`
+for (const info in cliente) {
+    if (Object.hasOwnProperty.call(object, key)) {
+        const element = object[key];
+        
     }
-    
 }
-
-console.log(relatorio)
